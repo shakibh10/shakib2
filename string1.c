@@ -2,18 +2,18 @@
 
 void main()
 {
-    int x=2,y=3,*p,*q;
+    int x=2,y=3,*r,*q;
 
-    p=&x;
+    r=&x;
     q=&y;
-    p=q;
+    r=q;
 
-    printf("%d %d %d %d",x,y,*p,*q);
+    printf("%d %d %d %d",x,y,*r,*q);
 
-    *p=3;
+    *r=3;
     *q=4;
     x=y;
-    printf("\n%d %d %d %d",*p,*q,x,y);
+    printf("\n%d %d %d %d",*r,*q,x,y);
 
     getch();
 }
